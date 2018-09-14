@@ -1,0 +1,155 @@
+.big-head-sec {
+	position: relative;
+	min-height: 900px;
+	background: url("../img/big-head/bg.jpg") no-repeat center, #0f102c;
+	overflow: hidden;
+	@include res(l) {
+		min-height: initial;
+		padding-bottom: 80px;
+	}
+	@include res(s) {
+		padding-bottom: 10px;
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		pointer-events: none;
+		background: linear-gradient(transparentize(#0f102c,1), #0f102c);
+		z-index: 0;
+	}
+}
+
+.big-head {
+	position: relative;
+	color: #fff;
+	z-index: 1;
+}
+
+.big-head__title {
+	padding-top: 200px;
+	text-align: center;
+	@include res(xl) {
+		padding-top: 180px;
+	}
+	@include res(l) {
+		padding-top: 70px;
+	}
+	@include res(s) {
+		padding-top: $pad-s;
+	}
+	span {
+		display: block;
+		max-width: 560px;
+		margin: 0 auto;
+		padding-top: $pad-s;
+		font-size: 21px;
+		line-height: (28/22);
+		@include res(xl) {
+			font-size: 20px;
+		}
+		@include res(l) {
+			padding-top: $pad-xs;
+			font-size: 18px;
+		}
+		@include res(s) {
+			font-size: 16px;
+		}
+	}
+	img {
+		display: none;
+		@include res(s) {
+			max-width: 167px;
+			display: block;
+			margin: 0 auto $pad-xs;
+		}
+	}
+	.btn {
+		margin-top: $pad-s;
+	}
+}
+
+.big-head__facts {
+	display: flex;
+	flex-wrap: wrap;
+	//align-items: flex-start;
+	margin-left: -$pad-s;
+	margin-right: -$pad-s;
+	padding-top: $pad-l;
+	@include res(m) {
+		margin-left: -$pad-xs;
+		margin-right: -$pad-xs;
+	}
+	@include res(s) {
+		margin-left: 0;
+		margin-right: 0;
+		padding-top: $pad-m;
+	}
+}
+
+.big-head__fact {
+	position: relative;
+	width: calc(100% / 3);
+	padding: 0 $pad-s $pad-m;
+	text-align: center;
+	@include res(m) {
+		padding: 0 $pad-xs $pad-m;
+	}
+	@include res(s) {
+		width: 100%;
+		padding: 0 0 $pad-s;
+	}
+	&:last-child {
+		@include res(s) {
+			&:after {
+				content: none;
+			}
+		}
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 16px;
+		height: 16px;
+		border-radius: 4px;
+		background: #fff;
+		transform: translate3d(-50%,0,0) rotate(45deg);
+		@include res(s) {
+			bottom: 6px;
+			width: 12px;
+			height: 12px;
+			border-radius: 3px;
+		}
+	}
+	span {
+		display: block;
+		font-family: $font-head;
+		font-size: 60px;
+		font-weight: 300;
+		line-height: 1.2;
+		@include res(xl) {
+			font-size: 46px;
+		}
+		@include res(l) {
+			font-size: 36px;
+		}
+		@include res(m) {
+			font-size: 32px;
+		}
+		@include res(s) {
+			font-size: 30px;
+		}
+	}
+	p {
+		font-size: 15px;
+		line-height: (24/16);
+		@include res(m) {
+			font-size: 14px;
+		}
+	}
+}

@@ -1,0 +1,26 @@
+$breakpoints: (
+	'xxl': (max-width: 1680px),
+	'xl': (max-width: 1400px),
+	'l': (max-width: 1024px),
+	'm': (max-width: 768px),
+	's': (max-width: 680px),
+	'xs': (max-width: 480px),
+	'xxs': (max-width: 355px),
+);
+
+$font-head: 'MetaSerifPro', serif;
+$font: 'Proxima Nova', 'Helvetica Neue', Arial, sans-serif;
+
+$gold: #bea77a;
+
+$container_width: 1212px;
+
+$pad-xxl: 100px;
+$pad-xl: 80px;
+$pad-l: 60px;
+$pad-m: 40px;
+$pad-s: 30px;
+$pad-xs: 20px;
+$pad-xxs: 10px;
+
+$gutter: 10px;
