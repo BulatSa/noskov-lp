@@ -43,6 +43,36 @@
 	}
 }
 
+.def-sec {
+	padding-top: 80px;
+	padding-bottom: 80px;
+	@include res(xl) {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	@include res(l) {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	@include res(s) {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+}
+
+.def-sec-bottom {
+	padding-bottom: 80px;
+	@include res(xl) {
+		padding-bottom: 60px;
+	}
+	@include res(l) {
+		padding-bottom: 40px;
+	}
+	@include res(s) {
+		padding-bottom: 30px;
+	}
+}
+
 .row {
 	display: flex;
 	flex-wrap: wrap;

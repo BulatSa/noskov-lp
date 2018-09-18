@@ -1,0 +1,186 @@
+.deals-sec {
+	background: url("../img/deals/bg.jpg") no-repeat, #0f102c;
+	background-position: 50% 0%;
+	@include res(xl) {
+		background-size: 1600px auto;
+	}
+	@include res(l) {
+		background-size: 1500px auto;
+	}
+	@include res(m) {
+		background: #0f102c;
+	}
+}
+
+.deals {
+	padding-top: $pad-xl;
+
+	@include res(xl) {
+		padding-top: $pad-l;
+	}
+	.page-title {
+		color: #fff;
+	}
+}
+
+.deals__slider {
+	max-width: 640px;
+	margin: 0 auto;
+	border-radius: 10px;
+	background: #fff;
+	.flickity-viewport {
+		transition: height 0.3s ease;
+	}
+}
+
+.deals__slide {}
+
+
+.d-slide {
+	width: 100%;
+	padding: $pad-s $pad-m;
+	@include res(l) {
+		padding: $pad-s $pad-s;
+	}
+	@include res(m) {
+		padding: 25px $pad-xs;
+	}
+	@include res(s) {
+		padding: 20px 15px;
+	}
+}
+
+.d-slide__top {
+	.d-slide__title {
+		padding-bottom: 0;
+	}
+}
+
+.d-slide__title {
+	display: flex;
+	align-items: center;
+	padding-bottom: $pad-xxs;
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: 0.05em;
+	color: #929292;
+	border-bottom: 1px solid #929292;
+	span {
+		display: block;
+		padding-top: 2px;
+		padding-left: 15px;
+	}
+	.i-hammer {
+		font-size: 32px;
+		@include res(m) {
+			font-size: 22px;
+		}
+	}
+	.i-balance {
+		font-size: 31px;
+		@include res(m) {
+			font-size: 22px;
+		}
+	}
+	.i-mail-balance {
+		font-size: 32px;
+		@include res(m) {
+			font-size: 22px;
+		}
+	}
+	&--free {
+		border-bottom: none;
+	}
+}
+
+.d-slide__summ {
+	font-family: $font-head;
+	font-size: 48px;
+	line-height: 1;
+	color: #2327a4;
+	@include res(xl) {
+		font-size: 42px;
+	}
+	@include res(l) {
+		font-size: 38px;
+	}
+	@include res(m) {
+		font-size: 36px;
+	}
+	@include res(s) {
+		font-size: 28px;
+	}
+}
+
+.d-slide__info {
+	padding-top: 15px;
+	padding-bottom: $pad-xs;
+	@include res(m) {
+		padding-top: $pad-xxs;
+	}
+	p {
+		padding-bottom: $pad-xxs;
+		font-size: 16px;
+		line-height: (22/16);
+		@include res(l) {
+			font-size: 14px;
+		}
+		&:last-child {
+			padding-bottom: 0;
+		}
+	}
+}
+
+.d-slide__situation {}
+
+.d-slide__result {}
+
+.d-slide__doc {
+	display: inline-flex;
+	align-items: center;
+	font-size: 16px;
+	line-height: (22/16);
+	color: #2327a4;
+	&:hover {
+		span {
+			border-color: transparentize(#000,1);
+		}
+	}
+	i {
+		font-size: 21px;
+	}
+	span {
+		display: inline-block;
+		margin-left: 10px;
+		border-bottom: 1px dashed #2327a4;
+		transition: all 0.3s ease;
+	}
+}
+
+
+.deals__slide-head {}
+
+.deals__slide-situation {}
+
+.deals__slide-result {}
+
+.deals__nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: $pad-s;
+	text-align: center;
+	color: #fff;
+	span {
+		display: block;
+		margin-right: 10px;
+		margin-left: 10px;
+		margin-bottom: 4px;
+	}
+	a {
+		transition: all 0.3s ease;
+		&:hover {
+			color: $gold;
+		}
+	}
+}

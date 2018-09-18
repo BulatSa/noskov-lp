@@ -1,0 +1,151 @@
+.about-sec {
+	background: url("../img/about/bg.jpg") no-repeat center top, #0f102c;
+	@include res(xl) {
+		padding-top: $pad-xs;
+	}
+	@include res(l) {
+		background-size: auto 100%;
+	}
+	@include res(m) {
+		background-size: auto 650px;
+	}
+	@include res(s) {
+		background: #0f102c;
+	}
+}
+
+.about {
+	color: #fff;
+}
+
+.about__blocks {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding-top: 200px;
+	@include res(l) {
+		padding-top: 180px;
+	}
+	@include res(s) {
+		padding-top: 20px;
+		flex-wrap: wrap;
+	}
+}
+
+.about__block {
+	position: relative;
+	max-width: 300px;
+	width: 100%;
+	@include res(s) {
+		max-width: 100%;
+		margin: 0 auto;
+	}
+	&:before {
+		@include res(s) {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(to bottom, transparentize(#000,1) 35%, #0f102c);
+		}
+	}
+	p {
+		position: relative;
+		padding-bottom: $pad-xs;
+		padding-right: $pad-m;
+		font-family: $font-head;
+		font-weight: 300;
+		font-size: 36px;
+		@include res(l) {
+			font-size: 32px;
+		}
+		@include res(s) {
+			font-size: 28px;
+		}
+		a {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			font-size: 20px;
+			@include res(s) {
+				top: 5px;
+				font-size: 18px;
+			}
+			&:hover {
+				&:before {
+					transform: translate3d(-50%,-50%,0) rotate(135deg);
+				}
+			}
+			&:before {
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				width: 31px;
+				height: 31px;
+				border-radius: 3px;
+				background: $gold;
+				transform: translate3d(-50%,-50%,0) rotate(45deg);
+				transition: all 0.3s ease;
+				z-index: 0;
+				@include res(s) {
+					width: 26px;
+					height: 26px;
+				}
+			}
+			i {
+				position: relative;
+				top: 1px;
+				z-index: 1;
+			}
+		}
+	}
+	ul {
+		list-style: none;
+	}
+	li {
+		position: relative;
+		padding-left: 25px;
+		padding-bottom: 10px;
+		font-size: 16px;
+		line-height: (24/16);
+		&:before {
+			content: '';
+			position: absolute;
+			top: 7px;
+			left: 0;
+			width: 10px;
+			height: 10px;
+			transform: rotate(45deg);
+			background: $gold;
+		}
+	}
+	&--noskov {
+		@include res(s) {
+			padding-top: 200px;
+			background: url("../img/about/bg-noskov.jpg") no-repeat top center;
+			background-size: 100% auto;
+		}
+	}
+	&--bash {
+		@include res(s) {
+			padding-top: 220px;
+			background: url("../img/about/bg-bash.jpg") no-repeat top center;
+			background-size: 100% auto;
+		}
+	}
+}
+
+.about__btn {
+	padding-top: $pad-xl;
+	text-align: center;
+	@include res(s) {
+		padding-top: $pad-s;
+	}
+	img {
+		display: block;
+		margin: 0 auto $pad-xs;
+	}
+}

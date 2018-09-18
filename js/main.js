@@ -206,3 +206,28 @@ $(function(){
 /***********************
  Mobile menu END
  ***********************/
+
+
+/***********************
+Flickity BEGIN
+***********************/
+$(document).ready(function() {
+	$('.deals__slider').flickity({
+		contain: true,
+		wrapAround: true,
+		prevNextButtons: false,
+		pageDots: false,
+		adaptiveHeight: true
+	});
+	$('.deals__nav .prev').on('click', function (e) {
+		e.preventDefault();
+		$('.deals__slider').flickity('previous');
+	});
+	$('.deals__nav .next').on('click', function (e) {
+		e.preventDefault();
+		$('.deals__slider').flickity('next');
+	})
+});
+/***********************
+Flickity END
+***********************/

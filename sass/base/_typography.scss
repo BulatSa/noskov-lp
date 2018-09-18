@@ -40,3 +40,54 @@ h1, .h1 {
 		}
 	}
 }
+
+h2, .h2 {
+	font-family: $font-head;
+	font-size: 65px;
+	line-height: 1;
+	font-weight: 300;
+	@include res(xl) {
+		font-size: 50px;
+	}
+	@include res(l) {
+		font-size: 40px;
+	}
+	@include res(s) {
+		font-size: 26px;
+	}
+}
+
+h3, .h3 {
+	font-family: $font-head;
+	font-size: 42px;
+	line-height: 1.1;
+	font-weight: 300;
+	@include res(xl) {
+		font-size: 38px;
+	}
+	@include res(l) {
+		font-size: 30px;
+	}
+	@include res(s) {
+		font-size: 20px;
+	}
+}
+
+
+
+.page-title {
+	padding-bottom: $pad-m;
+	text-align: center;
+	@include res(l) {
+		padding-bottom: $pad-s;
+	}
+	@include res(s) {
+		padding-bottom: $pad-xs;
+	}
+	span {
+		font-size: 14px;
+		text-transform: uppercase;
+		letter-spacing: 0.15em;
+		font-weight: bold;
+	}
+}

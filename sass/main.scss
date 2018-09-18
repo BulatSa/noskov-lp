@@ -6,6 +6,7 @@
 @import 'vendors/hamburgers';
 @import 'vendors/hamburgers-base';
 @import 'vendors/hamburgers-slider';
+@import 'vendors/flickity.min';
 
 @import 'base/reset';
 @import 'base/fonts';
@@ -19,5 +20,9 @@
 @import 'modules/header';
 @import 'modules/footer';
 @import 'modules/big-head';
+@import 'modules/about';
+@import 'modules/help';
+@import 'modules/deals';
+@import 'modules/recommend';
 
 @import 'pages/home';
