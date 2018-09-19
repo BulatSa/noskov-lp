@@ -1,8 +1,6 @@
 .about-sec {
-	background: url("../img/about/bg.jpg") no-repeat center top, #0f102c;
-	@include res(xl) {
-		padding-top: $pad-xs;
-	}
+	background: url("../img/about/bg.jpg") no-repeat, #0f102c;
+	background-position: 50% calc(0% + 50px);
 	@include res(l) {
 		background-size: auto 100%;
 	}

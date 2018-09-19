@@ -1,6 +1,9 @@
 .recommend-sec {
 	background: url("../img/recommend/bg.jpg") no-repeat center;
 	background-size: cover;
+	@include res(l) {
+		background: url("../img/recommend/bg-tablet.png") no-repeat center;
+	}
 }
 
 .recommend {}
@@ -8,12 +11,23 @@
 .recommend__slider {
 	max-width: 820px;
 	margin: 0 auto;
-	padding: $pad-m $pad-m $pad-l;
 	border-radius: 10px;
 	background: #fff;
+	.flickity-viewport {
+		transition: height 0.3s ease;
+	}
 }
 
-.recommend__slide {}
+.recommend__slide {
+	width: 100%;
+	padding: $pad-m $pad-m $pad-l;
+	@include res(l) {
+		padding: $pad-s $pad-s $pad-m;
+	}
+	@include res(s) {
+		padding: $pad-xs 15px $pad-xs;
+	}
+}
 
 .recommend__slide-title {
 	max-width: 480px;
@@ -25,6 +39,15 @@
 		font-size: 30px;
 		font-weight: 300;
 		line-height: 1.2;
+		@include res(xl) {
+			font-size: 28px;
+		}
+		@include res(l) {
+			font-size: 26px;
+		}
+		@include res(s) {
+			font-size: 22px;
+		}
 	}
 	p {
 		padding-top: $pad-xs;
@@ -32,22 +55,40 @@
 		font-size: 14px;
 		line-height: (24/14);
 		letter-spacing: 0.05em;
+		@include res(s) {
+			padding-top: $pad-xxs;
+			font-size: 12px;
+		}
 	}
 }
 
 .recommend__slide-info {
 	margin-top: $pad-s;
 	padding-top: $pad-s;
+	font-size: 16px;
+	line-height: (24/16);
 	border-top: 1px solid #000;
+	@include res(s) {
+		margin-top: $pad-xs;
+		padding-top: $pad-xs;
+		font-size: 14px;
+	}
 }
 
-.recommend__slide-nav {
+.recommend__nav {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	padding-top: $pad-s;
 	text-align: center;
 	color: #0f102c;
+	font-size: 18px;
+	@include res(l) {
+		font-size: 16px;
+	}
+	@include res(s) {
+		font-size: 14px;
+	}
 	span {
 		display: block;
 		margin-right: 10px;

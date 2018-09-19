@@ -1,0 +1,41 @@
+.main-form-sec {
+	background: #0f102c;
+}
+
+.main-form {
+	.page-title {
+		color: #fff;
+		span {
+			display: block;
+			padding-top: $pad-xs;
+			font-weight: normal;
+			letter-spacing: 0.1em;
+		}
+	}
+}
+
+.main-form__body {
+	.ajax-form {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -10px;
+		@include res(s) {
+			margin: 0;
+		}
+	}
+	.ajax-form__btns {
+		width: 100%;
+		margin: 0 10px;
+		@include res(s) {
+			margin: 0;
+		}
+	}
+	.label {
+		width: calc(100% / 3 - 20px);
+		margin: 0 10px 20px;
+		@include res(s) {
+			width: 100%;
+			margin: 0 0 15px;
+		}
+	}
+}

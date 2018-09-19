@@ -17,12 +17,12 @@
 			</div>
 			<nav class="header__nav">
 				<ul>
-					<li><a href="#" class="scrollto">Главная</a></li>
-					<li><a href="#" class="scrollto">кто мы?</a></li>
-					<li><a href="#" class="scrollto">виды помощи</a></li>
-					<li><a href="#" class="scrollto">Наши дела</a></li>
-					<li><a href="#" class="scrollto">рекомендации</a></li>
-					<li><a href="#" class="scrollto">контакты</a></li>
+					<li><a href="#main" class="scrollto">Главная</a></li>
+					<li><a href="#about" class="scrollto">Кто мы?</a></li>
+					<li><a href="#help" class="scrollto">Виды помощи</a></li>
+					<li><a href="#deals" class="scrollto">Наши дела</a></li>
+					<li><a href="#recommend" class="scrollto">Рекомендации</a></li>
+					<li><a href="#contact" class="scrollto">Контакты</a></li>
 				</ul>
 			</nav>
 			<div class="header__contact">
@@ -37,16 +37,16 @@
 	<img src="img/header/logo-menu-2x.png" alt="">
 	<nav class="mobile-menu">
 		<ul>
-			<li><a href="#" class="scrollto">Главная</a></li>
-			<li><a href="#" class="scrollto">Кто мы?</a></li>
-			<li><a href="#" class="scrollto">Виды помощи</a></li>
-			<li><a href="#" class="scrollto">Наши дела</a></li>
-			<li><a href="#" class="scrollto">Рекомендации</a></li>
-			<li><a href="#" class="scrollto">Контакты</a></li>
+			<li><a href="#main" class="scrollto">Главная</a></li>
+			<li><a href="#about" class="scrollto">Кто мы?</a></li>
+			<li><a href="#help" class="scrollto">Виды помощи</a></li>
+			<li><a href="#deals" class="scrollto">Наши дела</a></li>
+			<li><a href="#recommend" class="scrollto">Рекомендации</a></li>
+			<li><a href="#contact" class="scrollto">Контакты</a></li>
 		</ul>
 	</nav>
 	<div class="mobile-menu__btn">
-		<a href="#" class="btn" data-src="#modal-call">Перезвоните мне</a>
+		<a href="#main-form" class="btn scrollto">Оставить заявку</a>
 	</div>
 	<div class="mobile-menu__adress">
 		<span>Москва, ул.Неверовского д. 10 стр. 3А</span>
@@ -54,14 +54,14 @@
 </div>
 
 
-<section class="big-head-sec">
+<section class="big-head-sec" id="main">
 	<div class="container">
 		<div class="big-head">
 			<div class="big-head__title">
 				<img src="img/header/logo-menu-2x.png" alt="">
 				<h1>Осуществляем защиту<small>от привлечения к&nbsp;субсидиарной ответственности</small></h1>
 				<span>Закажите бесплатную консультацию у&nbsp;нашего адвоката и&nbsp;вы узнаете свои шансы на победу</span>
-				<a href="#" class="btn">Бесплатная консультация</a>
+				<a href="#main-form" class="btn scrollto">Бесплатная консультация</a>
 			</div>
 			<div class="big-head__facts">
 				<div class="big-head__fact">
@@ -82,7 +82,7 @@
 </section>
 
 
-<section class="about-sec def-sec-bottom">
+<section class="about-sec def-sec" id="about">
 	<div class="container">
 		<div class="about">
 			<div class="page-title">
@@ -117,14 +117,14 @@
 			</div>
 			<div class="about__btn">
 				<img src="img/about/logo.png" alt="">
-				<a href="#" class="btn">Написать адвокатам</a>
+				<a href="#main-form" class="btn scrollto">Написать адвокатам</a>
 			</div>
 		</div>
 	</div>
 </section>
 
 
-<section class="help-sec def-sec">
+<section class="help-sec def-sec" id="help">
 	<div class="container">
 		<div class="help">
 			<div class="page-title">
@@ -212,7 +212,7 @@
 </section>
 
 
-<section class="deals-sec def-sec">
+<section class="deals-sec def-sec" id="deals">
 	<div class="container">
 		<div class="deals">
 			<div class="page-title">
@@ -349,7 +349,7 @@
 </section>
 
 
-<section class="recommend-sec def-sec">
+<section class="recommend-sec def-sec" id="recommend">
 	<div class="container">
 		<div class="recommend">
 			<div class="page-title">
@@ -366,11 +366,87 @@
 						<p>Наша компания неоднократно убедилась, что плотное взаимодействие с адвокатом Башиловым Борисом Игоревичем позволяет не только предотвращать возможные потери, но и эффективно отстаивать свою позицию в судах и налоговых органах.</p>
 					</div>
 				</div>
+				<div class="recommend__slide">
+					<div class="recommend__slide-title">
+						<span>Забегаев <br> Сергей Александрович</span>
+						<p>генеральный директор ооо «стройдитекс»</p>
+					</div>
+					<div class="recommend__slide-info">
+						<p>Наша компания неоднократно убедилась, что плотное взаимодействие с адвокатом Башиловым Борисом Игоревичем позволяет не только предотвращать возможные потери, но и эффективно отстаивать свою позицию в судах и налоговых органах.</p>
+						<p>Наша компания неоднократно убедилась, что плотное взаимодействие с адвокатом Башиловым Борисом Игоревичем позволяет не только предотвращать возможные потери, но и эффективно отстаивать свою позицию в судах и налоговых органах.</p>
+					</div>
+				</div>
+				<div class="recommend__slide">
+					<div class="recommend__slide-title">
+						<span>Забегаев <br> Сергей Александрович</span>
+						<p>генеральный директор ооо «стройдитекс»</p>
+					</div>
+					<div class="recommend__slide-info">
+						<p>Наша компания неоднократно убедилась, что плотное взаимодействие с адвокатом Башиловым Борисом Игоревичем позволяет не только предотвращать возможные потери, но и эффективно отстаивать свою позицию в судах и налоговых органах.</p>
+					</div>
+				</div>
 			</div>
-			<div class="recommend__slide-nav">
+			<div class="recommend__nav">
 				<a href="#" class="prev"><i class="i-prev"></i></a>
 				<span>Смотреть еще рекомендации</span>
 				<a href="#" class="next"><i class="i-next"></i></a>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="main-form-sec def-sec" id="main-form">
+	<div class="container">
+		<div class="main-form">
+			<div class="page-title">
+				<p class="h2">Готовы побеждать?</p>
+				<span>Заполните форму. Мы свяжемся с Вами и проконсультируем по Вашему вопросу.</span>
+			</div>
+			<div class="main-form__body">
+				<form class="ajax-form">
+					<label class="label">
+						<i class="i-input-name"></i>
+						<input type="text" name="user_name" placeholder="Ваше имя" data-label="Имя" class="input-text" >
+					</label>
+					<label class="label">
+						<i class="i-input-phone"></i>
+						<input type="tel" name="user_tel" placeholder="Ваш телефон*" data-label="Телефон"  class="input-text" data-req="true">
+					</label>
+					<label class="label">
+						<i class="i-input-mail"></i>
+						<input type="email" name="user_email" placeholder="Ваш email" data-label="Email" class="input-text">
+					</label>
+					<label class="label label--full">
+						<i class="i-input-comment"></i>
+						<textarea name="user_comment" data-label="Комментарий" class="input-textarea" placeholder="Ваше сообщение" rows="1"></textarea>
+					</label>
+					<div class="ajax-form__btns">
+						<label class="style-check-ios">
+							<input type="checkbox" name="user_policy" data-label="Согласен с условиями" value="yes" data-req="true" checked="">
+							<span>Нажимая кнопку, я даю согласие на&nbsp;обработку персональных данных и&nbsp;соглашаюсь с&nbsp;<a href="#">условиями политики конфиденциальности</a></span>
+						</label>
+						<button type="submit" class="btn">Отправить</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="contact-sec def-sec-top" id="contact">
+	<div class="contact">
+		<div class="container">
+			<div class="page-title">
+				<span>Адрес нашего офиса</span>
+				<p class="h2">121170, Москва, ул.Неверовского
+					д. 10 стр. 3А</p>
+			</div>
+		</div>
+		<div class="contact__map">
+			<div id="yandex-map">
+				<iframe src="https://yandex.ru/map-widget/v1/-/CBBFFDBQdD" width="100%" height="100%" frameborder="0" allowfullscreen="true"></iframe>
 			</div>
 		</div>
 	</div>

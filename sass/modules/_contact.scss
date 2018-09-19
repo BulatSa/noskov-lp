@@ -1,0 +1,33 @@
+.contact-sec {}
+.contact {}
+.contact__map {
+	position: relative;
+	width: 100%;
+	height: 600px;
+	@include res(xl) {
+		height: 540px;
+	}
+	@include res(l) {
+		height: 500px;
+	}
+	@include res(s) {
+		height: 300px;
+	}
+	@include res(xs) {
+		height: 280px;
+	}
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 60px;
+		background: linear-gradient(to bottom, #fff, transparentize(#fff,1));
+		pointer-events: none;
+	}
+}
+
+#yandex-map {
+	height: 100%;
+}

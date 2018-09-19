@@ -1,11 +1,17 @@
 .big-head-sec {
 	position: relative;
 	min-height: 900px;
+	margin-top: 80px;
+	padding-bottom: 80px;
 	background: url("../img/big-head/bg.jpg") no-repeat center, #0f102c;
 	overflow: hidden;
+	@include res(xl) {
+		min-height: 720px;
+		margin-top: 70px;
+	}
 	@include res(l) {
 		min-height: initial;
-		padding-bottom: 80px;
+
 	}
 	@include res(s) {
 		padding-bottom: 10px;
@@ -33,7 +39,7 @@
 	padding-top: 200px;
 	text-align: center;
 	@include res(xl) {
-		padding-top: 180px;
+		padding-top: 120px;
 	}
 	@include res(l) {
 		padding-top: 70px;

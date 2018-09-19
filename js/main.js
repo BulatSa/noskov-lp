@@ -161,7 +161,7 @@ $(function () {
 $(function () {
 	$('.scrollto').on('click', function () {
 		var elementClick = $(this).attr("href");
-		var destination = $(elementClick).offset().top;
+		var destination = $(elementClick).offset().top - 30;
 		$('html,body').stop().animate({scrollTop: destination}, 1000);
 		return false;
 	});
@@ -179,6 +179,14 @@ $(function () {
 		$(this.element).toggleClass('animated');
 	}, {
 		offset: '85%'
+	});
+
+	$(window).on('scroll',function () {
+		if ($(this).scrollTop() > 40){
+			$('.header-sec').addClass('active');
+		} else {
+			$('.header-sec').removeClass('active');
+		}
 	});
 });
 /***********************
@@ -226,8 +234,63 @@ $(document).ready(function() {
 	$('.deals__nav .next').on('click', function (e) {
 		e.preventDefault();
 		$('.deals__slider').flickity('next');
+	});
+
+	$('.recommend__slider').flickity({
+		contain: true,
+		wrapAround: true,
+		prevNextButtons: false,
+		pageDots: false,
+		adaptiveHeight: true
+	});
+	$('.recommend__nav .prev').on('click', function (e) {
+		e.preventDefault();
+		$('.recommend__slider').flickity('previous');
+	});
+	$('.recommend__nav .next').on('click', function (e) {
+		e.preventDefault();
+		$('.recommend__slider').flickity('next');
 	})
 });
 /***********************
 Flickity END
 ***********************/
+
+
+/**************************************************
+ Google Maps
+ ***************************************************/
+$(document).ready(function(){
+	if ($('#googlemap').length) {
+
+		google.maps.event.addDomListener(window, 'load', initMap);
+
+		function initMap() {
+			var mapOptions = {
+				zoom: 16,
+				scrollwheel: false,
+				zoomControlOptions: {
+					position: google.maps.ControlPosition.LEFT_CENTER
+				},
+				mapTypeControl: false,
+				center: new google.maps.LatLng(59.903319, 30.313501)
+			};
+
+			var mapElement = document.getElementById('googlemap');
+
+			var map = new google.maps.Map(mapElement, mapOptions);
+
+			var marker = new google.maps.Marker({
+				position: new google.maps.LatLng(59.903319, 30.313501),
+				map: map,
+				title: '121170, Москва, ул.Неверовского д. 10 стр. 3А',
+				icon: '/img/contact/buble.png'
+			});
+		}
+		initMap();
+
+	}
+});
+/**************************************************
+ End Google Maps
+ ***************************************************/

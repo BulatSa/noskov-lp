@@ -89,5 +89,8 @@ h3, .h3 {
 		text-transform: uppercase;
 		letter-spacing: 0.15em;
 		font-weight: bold;
+		@include res(xs) {
+			font-size: 12px;
+		}
 	}
 }
