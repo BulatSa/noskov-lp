@@ -11,9 +11,9 @@
 	}
 	@include res(l) {
 		min-height: initial;
-
 	}
 	@include res(s) {
+		margin-top: 45px;
 		padding-bottom: 10px;
 	}
 	&:after {

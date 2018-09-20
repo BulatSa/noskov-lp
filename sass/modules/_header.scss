@@ -1,3 +1,10 @@
+.hamburger--slider.is-active .hamburger-inner {
+	background: #fff;
+	&:after {
+		background: #fff;
+	}
+}
+
 .header-sec {
 	position: fixed;
 	top: 0;
@@ -11,7 +18,7 @@
 		padding: 15px 0;
 	}
 	@include res(s) {
-		padding: 12px 0;
+		padding: 6px 0;
 	}
 	&.active {
 		padding: 6px 0;
@@ -60,6 +67,10 @@
 	a {
 		display: block;
 		padding: 5px 10px;
+		transition: all 0.3s ease;
+		&:hover {
+			color: #2327a4;
+		}
 	}
 }
 
@@ -94,6 +105,9 @@
 		outline: none;
 		z-index: 16;
 	}
+	@include res(s) {
+		top: 0px;
+	}
 	.hamburger {
 		outline: none;
 	}
@@ -103,9 +117,11 @@
 	position: fixed;
 	top: 0;
 	left: 0;
+	max-width: 400px;
 	width: 100%;
 	height: 100%;
 	padding-top: 40px;
+	padding-bottom: 20px;
 	padding-left: $pad-xs;
 	color: #fff;
 	background: #00336c;
@@ -113,7 +129,9 @@
 	visibility: hidden;
 	transition: all 0.3s ease;
 	transform: translate3d(-100%,0,0);
+	overflow: auto;
 	z-index: 15;
+	-webkit-overflow-scrolling: touch;
 	img {
 		max-width: 167px;
 		display: block;
@@ -152,4 +170,36 @@
 	font-size: 13px;
 	line-height: (21/13);
 	color: #fff;
+}
+
+.video-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	z-index: 0;
+	@include res(l) {
+		display: none;
+	}
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 23, 0.5);
+	}
+	video {
+		width: 100%;
+		min-width: 100%;
+		height: auto;
+		min-height: 100%;
+		-o-object-fit: cover;
+		object-fit: cover;
+	}
 }

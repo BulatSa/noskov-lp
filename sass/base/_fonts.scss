@@ -29,3 +29,11 @@
 	font-weight: 500;
 	font-style: normal;
 }
+
+@font-face {
+	font-family: 'ALS Rubl';
+	src: url('../fonts/hinted-subset-ALSRubl.woff2') format('woff2'),
+	url('../fonts/hinted-subset-ALSRubl.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}

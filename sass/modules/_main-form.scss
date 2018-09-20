@@ -10,11 +10,16 @@
 			padding-top: $pad-xs;
 			font-weight: normal;
 			letter-spacing: 0.1em;
+			@include res(s) {
+				padding-top: $pad-xxs;
+			}
 		}
 	}
 }
 
 .main-form__body {
+	opacity: 0;
+	transform: translate3d(0,25px,0);
 	.ajax-form {
 		display: flex;
 		flex-wrap: wrap;
@@ -37,5 +42,10 @@
 			width: 100%;
 			margin: 0 0 15px;
 		}
+	}
+	&.animated {
+		opacity: 1;
+		transition: all 0.6s ease;
+		transform: translate3d(0,0,0);
 	}
 }

@@ -44,6 +44,9 @@
 	border-radius: 10px;
 	overflow: hidden;
 	background: #14153a;
+	opacity: 0;
+
+	transform: translate3d(0,25px,0);
 	@include res(xl) {
 		width: calc(100% / 3 - 30px);
 		margin: 0 15px;
@@ -56,6 +59,35 @@
 		max-width: 640px;
 		width: 100%;
 		margin: 0 auto $pad-xs;
+	}
+
+	&:last-child {
+		@include res(m) {
+			margin-bottom: 0;
+		}
+	}
+	&.animated {
+		opacity: 1;
+		transition: all 0.8s ease;
+		transform: translate3d(0,0,0);
+		&:nth-child(1){
+			transition-delay: 0s;
+			@include res(m) {
+				transition-delay: 0s;
+			}
+		}
+		&:nth-child(2){
+			transition-delay: 0.3s;
+			@include res(m) {
+				transition-delay: 0s;
+			}
+		}
+		&:nth-child(3){
+			transition-delay: 0.6s;
+			@include res(m) {
+				transition-delay: 0s;
+			}
+		}
 	}
 }
 

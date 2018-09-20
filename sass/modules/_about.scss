@@ -1,6 +1,7 @@
 .about-sec {
 	background: url("../img/about/bg.jpg") no-repeat, #0f102c;
 	background-position: 50% calc(0% + 50px);
+	overflow: hidden;
 	@include res(l) {
 		background-size: auto 100%;
 	}
@@ -34,8 +35,11 @@
 	position: relative;
 	max-width: 300px;
 	width: 100%;
+	transition: all 0.8s ease;
+	opacity: 0;
 	@include res(s) {
-		max-width: 100%;
+		max-width: 380px;
+		width: 100%;
 		margin: 0 auto;
 	}
 	&:before {
@@ -120,18 +124,26 @@
 			background: $gold;
 		}
 	}
+	&.animated {
+		opacity: 1;
+		transform: translate3d(0,0,0);
+	}
 	&--noskov {
+		transform: translate3d(-25px,50px,0);
 		@include res(s) {
 			padding-top: 200px;
 			background: url("../img/about/bg-noskov.jpg") no-repeat top center;
 			background-size: 100% auto;
+			transform: translate3d(0,25px,0);
 		}
 	}
 	&--bash {
+		transform: translate3d(25px,50px,0);
 		@include res(s) {
 			padding-top: 220px;
 			background: url("../img/about/bg-bash.jpg") no-repeat top center;
 			background-size: 100% auto;
+			transform: translate3d(0,25px,0);
 		}
 	}
 }

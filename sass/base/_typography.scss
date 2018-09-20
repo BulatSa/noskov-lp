@@ -78,6 +78,9 @@ h3, .h3 {
 .page-title {
 	padding-bottom: $pad-m;
 	text-align: center;
+	transition: all 0.6s ease;
+	opacity: 0;
+	transform: translate3d(0,10px,0);
 	@include res(l) {
 		padding-bottom: $pad-s;
 	}
@@ -93,4 +96,12 @@ h3, .h3 {
 			font-size: 12px;
 		}
 	}
+	&.animated {
+		opacity: 1;
+		transform: translate3d(0,0,0);
+	}
+}
+
+.rub {
+	font-family: 'ALS Rubl';
 }

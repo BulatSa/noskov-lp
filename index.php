@@ -55,6 +55,11 @@
 
 
 <section class="big-head-sec" id="main">
+	<div class="video-bg">
+		<video autoplay="" loop="" muted="">
+			<source src="http://demo.penbrain.ru/noskov-lp/video/1.mp4" type="video/mp4">
+		</video>
+	</div>
 	<div class="container">
 		<div class="big-head">
 			<div class="big-head__title">
@@ -85,12 +90,12 @@
 <section class="about-sec def-sec" id="about">
 	<div class="container">
 		<div class="about">
-			<div class="page-title">
+			<div class="page-title anim">
 				<span>знакомство</span>
 				<p class="h2">Кто мы?</p>
 			</div>
 			<div class="about__blocks">
-				<div class="about__block about__block--noskov">
+				<div class="about__block about__block--noskov anim">
 					<p>
 						Носков Игорь
 						<a href="#" target="_blank"><i class="i-soc-fb"></i></a>
@@ -103,7 +108,7 @@
 					</ul>
 				</div>
 
-				<div class="about__block about__block--bash">
+				<div class="about__block about__block--bash anim">
 					<p>
 						Башилов Борис
 						<a href="#" target="_blank"><i class="i-soc-fb"></i></a>
@@ -127,12 +132,12 @@
 <section class="help-sec def-sec" id="help">
 	<div class="container">
 		<div class="help">
-			<div class="page-title">
+			<div class="page-title anim">
 				<span>Виды помощи</span>
 				<p class="h2">В каких случаях мы можем помочь?</p>
 			</div>
 			<div class="help__list">
-				<div class="help__item">
+				<div class="help__item anim">
 					<div class="help__item-title">
 						<p class="h3">Предупреждаем</p>
 						<span>субсидиарную ответственность</span>
@@ -157,7 +162,7 @@
 					</div>
 				</div>
 
-				<div class="help__item">
+				<div class="help__item anim">
 					<div class="help__item-title">
 						<p class="h3">Защищаем</p>
 						<span>от субсидиарной ответственности в суде</span>
@@ -182,7 +187,7 @@
 					</div>
 				</div>
 
-				<div class="help__item">
+				<div class="help__item anim">
 					<div class="help__item-title">
 						<p class="h3">Привлекаем</p>
 						<span>к субсидиарной ответственности</span>
@@ -215,7 +220,7 @@
 <section class="deals-sec def-sec" id="deals">
 	<div class="container">
 		<div class="deals">
-			<div class="page-title">
+			<div class="page-title anim">
 				<span>Судебная практика</span>
 				<p class="h2">Наши дела</p>
 			</div>
@@ -228,6 +233,7 @@
 						</div>
 						<p class="d-slide__summ">
 							142 148 157,45
+							<span class="rub">c</span>
 						</p>
 						<div class="d-slide__info">
 							<p>по делу ООО «Управляющая Компания – МТ (Мосты и Тоннели)»</p>
@@ -267,6 +273,7 @@
 						</div>
 						<p class="d-slide__summ">
 							142 148 157,45
+							<span class="rub">c</span>
 						</p>
 						<div class="d-slide__info">
 							<p>по делу ООО «Управляющая Компания – МТ (Мосты и Тоннели)»</p>
@@ -307,6 +314,7 @@
 						</div>
 						<p class="d-slide__summ">
 							142 148 157,45
+							<span class="rub">c</span>
 						</p>
 						<div class="d-slide__info">
 							<p>по делу ООО «Управляющая Компания – МТ (Мосты и Тоннели)»</p>
@@ -352,7 +360,7 @@
 <section class="recommend-sec def-sec" id="recommend">
 	<div class="container">
 		<div class="recommend">
-			<div class="page-title">
+			<div class="page-title anim">
 				<span>Рекомендации</span>
 				<p class="h2">Что говорят наши Доверители</p>
 			</div>
@@ -399,11 +407,11 @@
 <section class="main-form-sec def-sec" id="main-form">
 	<div class="container">
 		<div class="main-form">
-			<div class="page-title">
+			<div class="page-title anim">
 				<p class="h2">Готовы побеждать?</p>
 				<span>Заполните форму. Мы свяжемся с Вами и проконсультируем по Вашему вопросу.</span>
 			</div>
-			<div class="main-form__body">
+			<div class="main-form__body anim">
 				<form class="ajax-form">
 					<label class="label">
 						<i class="i-input-name"></i>
@@ -438,7 +446,7 @@
 <section class="contact-sec def-sec-top" id="contact">
 	<div class="contact">
 		<div class="container">
-			<div class="page-title">
+			<div class="page-title anim">
 				<span>Адрес нашего офиса</span>
 				<p class="h2">121170, Москва, ул.Неверовского
 					д. 10 стр. 3А</p>

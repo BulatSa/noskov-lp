@@ -75,6 +75,7 @@ label {
 	border-radius: 5px;
 	background: #1c1e53;
 	overflow: visible;
+	transition: all 0.3s ease;
 	-webkit-appearance: none;
 	@include res(l) {
 		padding: 10px 40px;

@@ -112,6 +112,12 @@
 	@include res(s) {
 		font-size: 28px;
 	}
+	.rub {
+		font-size: 24px;
+		@include res(s) {
+			font-size: 18px;
+		}
+	}
 }
 
 .d-slide__info {
